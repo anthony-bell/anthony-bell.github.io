@@ -25,7 +25,7 @@
 	Global Styles
 ========================================================================== */
 a {
-	color: #E04343;
+	color: #fff;
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
@@ -34,15 +34,23 @@ a {
 	outline:none!important;
 }
 a:hover,a:focus,a:active {
-	color:#0D0D0D;
+	color:#19f6e8;
 	text-decoration:none;
 	outline:none!important;
 }
 p {
-	color:#8c9398;
+	color:rgb(68, 171, 255);
 	word-spacing:1px;
 	line-height:25px;
 	font-size:14px;
+	
+}
+p2 {
+	color:#fff;
+	word-spacing:1px;
+	line-height:25px;
+	font-size:14px;
+	
 }
 h2 {
 	font-size:15px;
@@ -220,86 +228,25 @@ apple {
 }
 /* ANIMATIONS */
 
-.Object,
-.ObjectContainer a {
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -ms-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
 
-.ObjectContainer {
-  width: 6.25em;
-  height: 6.25em;
-  float: left;
-  display: block;
-  position: relative;
-}
-
-.ObjectContainer .Object {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.ObjectContainer a {
-  position: absolute;
-  bottom: -100px;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  line-height: 0px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.ObjectContainer span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  line-height: 100px;
-  text-align: center;
-  vertical-align: middle;
-  color:white;
-}
-
-
-.ObjectContainer:hover .Object {
-  margin: 2.5%;
-  height: 95%;
-  width: 95%;
-  border-radius: 50%;
-  -webkit-transform: rotate(100deg);
-  -moz-transform: rotate(100deg);
-  -ms-transform: rotate(100deg);
-  -o-transform: rotate(100deg);
-  transform: rotate(100deg);
-}
-
-.ObjectContainer:hover a {
-  opacity: 1;
-  bottom: 0;
-  /*line height adjust the verticle alignment*/
-  line-height: 4.5em;
-  letter-spacing:.05em;
-}
-
-#red.Object {
-  background-color: #3b5998;
-}
-#blue.Object{
-  background-color: #125688;
-}
-#maroon.Object{
-  background-color:#d50f25;
-}
-#skyblue.Object{
-  background-color:#cb2027;
-}
-a[class*="entypo-"]:before {
-	font-family: 'entypo', sans-serif;
-}
+  
+  @keyframes draw {
+	0% {
+	  stroke-dasharray: 140 540;
+	  stroke-dashoffset: -474;
+	  stroke-width: 8px;
+	}
+	100% {
+	  stroke-dasharray: 760;
+	  stroke-dashoffset: 0;
+	  stroke-width: 2px;
+	}
+  }
+  
+  .svg-wrapper:hover .shape {
+	-webkit-animation: 0.5s draw linear forwards;
+	animation: 0.5s draw linear forwards;
+  }
 
 
 dl,menu,ol,ul {
@@ -320,6 +267,10 @@ img {
 	border:0;
 	-ms-interpolation-mode:bicubic;
 }
+img2 {
+	display: block;
+	max-width: 50%;
+  }
 svg:not(:root) {
 	overflow: hidden;
 }
