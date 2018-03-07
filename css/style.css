@@ -58,7 +58,13 @@ h2 {
 	text-transform:uppercase;
 	font-weight:bold;
 }
-h2::after {
+.h2 {
+	font-size:15px;
+	color:#fff!important;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.h2::after {
 	content:" ";
 	border:solid 1px #CCCCCC;
 	display:block;
@@ -127,6 +133,10 @@ h1 {
 	color:#353535;
 }
 h2 {
+	font-size:1.5em;
+	margin:0.83em 0;
+}
+.h2 {
 	font-size:1.5em;
 	margin:0.83em 0;
 }

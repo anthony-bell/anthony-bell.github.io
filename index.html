@@ -16,16 +16,8 @@
 	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
 	<!-- FlexSlider -->
     <link href="assets/flexslider/flexslider.css" rel="stylesheet">
-	<!-- Theme Style -->
-    <link href="css/style.css" rel="stylesheet">
-  <!-- Hover Style -->
-  <link href="css/hover.css" rel="stylesheet">
-  <!-- Profile Style -->
-  <link href="css/profile.css" rel="stylesheet">
-  <!-- Timeline Style -->
-  <link href="css/timeline.css" rel="stylesheet"> 
-	<!-- Animations -->
-    <link href="css/animate.css" rel="stylesheet">
+	
+  
 	<!-- Custom Favicon -->
     <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon" /> 
     <!-- Emojis -->
@@ -37,6 +29,9 @@
     <script src="assets/html5shiv/html5shiv.js"></script>
     <script src="assets/respond/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+      @import url("css/main.css");
+    </style>
   </head>
     <body id="top">
 
@@ -154,7 +149,7 @@
                     <div class="icon">
                       <i class="fa fa-graduation-cap" aria-hidden="true"></i><!-- Icon -->
                     </div>
-                    <h2>Education</h2><!-- Title -->
+                    <h2 class="h2">Education</h2><!-- Title -->
                     <p><b>Bachelor's - Computer Science:</b></p><p2>University of California, Davis (2016)</p2>
                     <p><b>Master's - Software Engineering:</b></p><p2>San Jose State University (2018)</p2><!-- Description -->
                   </div>
@@ -163,16 +158,16 @@
                     <div class="icon">
                       <i class="fa fa-code" aria-hidden="true"></i><!-- Icon -->
                     </div>
-                    <h2>Languages</h2><!-- Title -->
-                    <p2>Java<br>Javascript<br>C/C++<br>HTML<br>SQL</p2><!-- Description -->
+                    <h2 class="h2">Languages</h2><!-- Title -->
+                    <p2>Java<br>Javascript<br>C/C++<br>Python<br>HTML<br>SQL</p2><!-- Description -->
                   </div>
           <!-- Service Box 3 -->
                   <div class="col-md-4 wp2 item delay-1s">
                     <div class="icon">
                       <i class="fa fa-github-square"></i><!-- Icon -->
                     </div>
-                    <h2>Frameworks / Tools</h2><!-- Title -->
-                    <p2>Git &amp; Github<br>Node<br>MongoDB<br>Postman<br>Chrome DevTools<br>JQuery<br>Express</p2><!-- Description -->
+                    <h2 class="h2">Frameworks / Tools</h2><!-- Title -->
+                    <p2>Git &amp; Github<br>Node<br>MongoDB<br>Postman<br>Chrome DevTools<br>JQuery<br>Express<br>Swagger</p2><!-- Description -->
                   </div>
           </div>
                   <div class="clearfix"></div>
@@ -189,20 +184,21 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   
-      <link rel="stylesheet" href="css/timeline.css">
+        
       <div class="timeline-container wp3" id="timeline-1">
           <div class="timeline-header">
-            <h2 class="timeline-header__title">Experience</h2>
+            <h2 class="timeline-header__title" id="timeline-title">Experience</h2>
           </div>
           <div class="timeline">
             <div class="timeline-item" data-text="JUNE 2017 - SEP 2017">
               <div class="timeline__content"><img class="timeline__img" src=""/>
-                <h2 class="timeline__content-title">Bluescape</h2>
-                <p class="timeline__content-desc">Wrote REST APIs with NodeJs for product’s workspace. 
-                  Improved my design implementation skills for queries and database schemas by analyzing and designing relational database schemas using MongoDB/Mongoose.
-                    •	Developed code enhancements for inclusion in future code releases, refactoring and patches.
-                    •	Evaluated multiple software solutions during early software architecture plotting and system migration planning stage.
-                    •	Mentored a younger intern by teaching them how REST calls and APIs work and how to write them, as well as NodeJs.
+                    <h2 class="timeline__content-title">Bluescape</h2>
+                    <h3 class="timeline-header__subtitle">Software Engineer Intern</h3>
+                
+                
+                <p class="timeline__content-desc">Wrote REST APIs with NodeJs for product’s software. 
+                  Improved my design implementation skills for queries &amp; database schemas by analyzing &amp; designing relational database schemas with Swagger &amp; MongoDB/Mongoose.
+                  Additionally, progressed in my leadership skills by mentoring a high school &amp; undergraduate intern by familiarizing them with REST calls &amp; APIs and how to write them, as well as an introduction to NodeJS.
                     </p>
               </div>
             </div>
@@ -283,9 +279,8 @@
         
       </div>    
         
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-
-    <script src="js/index.js"></script>
+  
+    <!-- <script src="js/index.js"></script> -->
 
 		<!-- ==========================
         EXPERIENCE SECTION END
@@ -483,7 +478,7 @@
                         </div>
                       </div>
             <br>
-                      <h2>Creative Minds</h2><!-- Headline -->
+                      <h2 class="h2">Creative Minds</h2><!-- Headline -->
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description-->
                     </div>
           <!-- Blog Entry 2 -->
@@ -494,7 +489,7 @@
                         </div>
                       </div>
             <br>
-                      <h2>Creative Hearts</h2><!-- Headline -->
+                      <h2 class="h2">Creative Hearts</h2><!-- Headline -->
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description -->
                     </div>
           <!-- Blog Entry 3 -->
@@ -505,7 +500,7 @@
                         </div>
                       </div>
             <br>
-                      <h2>Creative Ideas</h2><!-- Headline -->
+                      <h2 class="h2">Creative Ideas</h2><!-- Headline -->
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description-->
                     </div>
                   </li>
@@ -650,7 +645,8 @@
         FOOTER SECTION END
         =========================== -->		
 		
-		
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- SmoothScroll -->           
