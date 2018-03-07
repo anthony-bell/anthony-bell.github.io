@@ -1205,7 +1205,7 @@ ul.slides li {
 	.fluid-white {
 		display:none;
 	}
-	.wp2,.wp4,.wp5,.light-box {
+	.wp2,.wp3,.wp4,.wp5,.light-box {
 		margin-bottom: 30px;
 	}
 }
@@ -1239,7 +1239,7 @@ ul.slides li {
 		background:#f3f5f8;
 		height:540px;
 	}
-	.wp2,.wp4,.wp5,.light-box {
+	.wp2,.wp3,.wp4,.wp5,.light-box {
 		margin-bottom:30px;
 	}
 }
