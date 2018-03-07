@@ -17,12 +17,12 @@ $(document).ready(function() {
 	$('.wp3').waypoint(function() {
 		$('.wp3').addClass('animated fadeInDown');
 	}, {
-		offset: '55%'
+		offset: '75%'
 	});
 	$('.wp4').waypoint(function() {
 		$('.wp4').addClass('animated fadeInDown');
 	}, {
-		offset: '75%'
+		offset: '50%'
 	});
 	$('.wp5').waypoint(function() {
 		$('.wp5').addClass('animated fadeInUp');
