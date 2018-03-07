@@ -340,7 +340,7 @@ table {
 }
 /* ==========================================================================Section Styles========================================================================== */
 .section-padding {
-	padding:90px 0 100px
+	padding:50px 0 100px
 }
 .dark-bg {
 	background:#f3f5f8;
@@ -517,7 +517,7 @@ table {
 .hero {
 	background: /*url('../img/header-bg.jpg')*/ right bottom no-repeat;
 	background-size: contain;
-	padding:110px 0 100px 0;
+	padding:110px 0 0px 0;
 	height:auto;
 	background-color: rgb(24, 29, 58);
 }
@@ -623,7 +623,7 @@ table {
 h1.arrow {
 	font-size: 16px;
 	text-transform:uppercase;
-	color:#353535;
+	color:#fff;
 	letter-spacing: 4px;
 	background:url('../img/h1-bg.png') no-repeat center bottom;
 	padding-bottom:30px;
