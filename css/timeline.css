@@ -9,7 +9,7 @@
 }
 .timeline__content-title {
   font-weight: normal;
-  font-size: 66px;
+  font-size: 42px;
   margin: -10px 0 0 0;
   transition: .4s;
   padding: 0 10px;
@@ -89,7 +89,7 @@
   opacity: 1;
 }
 .timeline-item--active .timeline__content-title {
-  margin: -50px 0 20px 0;
+  margin: -50px 0 0px 0;
 }
 @media only screen and (max-width: 767px) {
   .timeline-item {
@@ -147,7 +147,7 @@
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 16px;
   letter-spacing: 5px;
-  margin: 10px 0 0 0;
+  margin: 0px 0px 23px 11px;
   font-weight: normal;
 }
 
@@ -161,10 +161,3 @@
   font-family: Cardo;
 }
 
-/* IDs */
-/* #timeline-title {
-  font-size:15px;
-	color:rgb(214, 31, 190)!important;
-	text-transform:uppercase;
-	font-weight:bold;
-} */
