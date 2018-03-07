@@ -18,10 +18,10 @@
   transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
   fill: rgb(68, 171, 255);
 }
-.svg:hover .arrow {
+.svg:hover .arrowQR {
   animation: arrow-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
-.svg:hover .arrow-fixed {
+.svg:hover .arrowQR-fixed {
   animation: arrow-fixed-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 
