@@ -1,0 +1,51 @@
+/* #div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+.div .svg {
+  width: 80px;
+  height: auto;
+  margin: 0 16rem;
+  cursor: pointer;
+  overflow: visible;
+} 
+.svg polygon, .svg path {
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.svg:hover polygon, .svg:hover path {
+  transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+  fill: rgb(68, 171, 255);
+}
+.svg:hover .arrow {
+  animation: arrow-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.svg:hover .arrow-fixed {
+  animation: arrow-fixed-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+
+@keyframes arrow-anim {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  5% {
+    transform: translateX(-0.1rem);
+  }
+  100% {
+    transform: translateX(1rem);
+    opacity: 0;
+  }
+}
+@keyframes arrow-fixed-anim {
+  5% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
