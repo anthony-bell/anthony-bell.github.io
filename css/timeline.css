@@ -136,14 +136,17 @@
   position: relative;
 }
 .timeline-header__title {
-  color: #fff;
-  font-size: 46px;
-  font-family: Cardo;
-  font-weight: normal;
-  margin: 0;
+  font-size: 30px;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing: 4px;
+	background:url('../img/h1-bg.png') no-repeat center bottom;
+	padding-bottom:30px;
+	font-weight: bold;
 }
+
 .timeline-header__subtitle {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(68, 171, 255);
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 16px;
   letter-spacing: 5px;

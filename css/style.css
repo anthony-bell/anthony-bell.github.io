@@ -142,7 +142,7 @@ h2 {
 }
 h3 {
 	font-size:1.17em;
-	margin:1em 0;
+	margin:1em 10px;
 }
 h4 {
 	font-size:1em;
@@ -631,7 +631,7 @@ table {
 	margin:50px 0 0;
 }
 h1.arrow {
-	font-size: 16px;
+	font-size: 30px;
 	text-transform:uppercase;
 	color:#fff;
 	letter-spacing: 4px;
