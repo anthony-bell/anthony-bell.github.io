@@ -1,5 +1,5 @@
 #arrowAnim {
-  width: 70vw;
+  width: 57vw;
   height: 0vh;
   display: flex;
   justify-content: center;
@@ -7,9 +7,9 @@
 }
 
 #arrow {
-  width: 5vw;
-  height: 5vw;
-  border: 1.5vw solid;
+  width: 2vw;
+  height: 2vw;
+  border: .5vw solid;
   border-color: rgb(68, 171, 255) transparent transparent rgb(68, 171, 255);
   transform: rotate(-45deg);
 }
