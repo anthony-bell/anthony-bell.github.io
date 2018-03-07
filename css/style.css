@@ -706,7 +706,7 @@ h1.arrow span {
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
 	border: 1px solid #fff;
-	color: rgb(68, 171, 255);;
+	color: rgb(68, 171, 255);
 }
 .services .item:hover .icon {
 	background: rgb(68, 171, 255);
@@ -1178,7 +1178,7 @@ ul.slides li {
 .wp3 {
 	background:url('../img/iphone-bg.png') no-repeat center center;
 	background-position:200px 10px;
-	height: 100%;
+	height: 51%;
 }
 /* ==========================================================================Responsive========================================================================== */
 /* 320px (iPhone) */
