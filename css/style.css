@@ -1161,7 +1161,7 @@ ul.slides li {
     border-color: #FFE800;
 }
 /* ==========================================================================Waypoints========================================================================== */
-.wp1,.wp2,.wp3,.wp4,.wp5,.wp6 {
+.wp1,.wp2,.wp3,.wp4,.wp5,.wp6,.wp7 {
 	visibility:hidden;
 }
 .bounceInLeft,.bounceInRight,.fadeInUp,.fadeInUpDelay,.fadeInDown,.fadeInUpD,.fadeInLeft,.fadeInRight {
