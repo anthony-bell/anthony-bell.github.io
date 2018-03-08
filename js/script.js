@@ -27,7 +27,7 @@ $(document).ready(function() {
 	$('.wp5').waypoint(function() {
 		$('.wp5').addClass('animated fadeInUp');
 	}, {
-		offset: '50%'
+		offset: '75%'
 	});
 	$('.wp6').waypoint(function() {
 		$('.wp6').addClass('animated fadeInDown');
