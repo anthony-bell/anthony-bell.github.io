@@ -1,4 +1,4 @@
-/* #div {
+/* .div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11,19 +11,20 @@
   cursor: pointer;
   overflow: visible;
 } 
-.svg polygon, .svg path {
+
+/* .svg polygon, .svg path {
   transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
 }
 .svg:hover polygon, .svg:hover path {
   transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
   fill: rgb(68, 171, 255);
 }
-.svg:hover .arrowQR {
+.svg:hover .arrow {
   animation: arrow-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
-.svg:hover .arrowQR-fixed {
+.svg:hover .arrow-fixed {
   animation: arrow-fixed-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
-}
+} */
 
 @keyframes arrow-anim {
   0% {

@@ -136,6 +136,13 @@ h2 {
 	font-size:1.5em;
 	margin:0.83em 0;
 }
+svg2 {
+	width: 80px;
+  height: auto;
+  margin: 0 16rem;
+  cursor: pointer;
+  overflow: visible;
+}
 .h2 {
 	font-size:1.5em;
 	margin:0.83em 0;
@@ -676,6 +683,39 @@ h1.arrow span {
 .about-text {
 	padding:20px 50px 25px 50px;
 }
+.about-text2 {
+	padding:20px 50px 25px 50px;
+} 
+.about-text2 polygon, .about-text2 path {
+	transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.about-text2:hover polygon, .about-text2:hover path {
+	transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+	fill: rgb(68, 171, 255);
+}
+.about-text2:hover .arrow {
+	animation: arrow-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.about-text2:hover .arrow-fixed {
+	animation: arrow-fixed-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+
+.about-text3 {
+	padding:20px 50px 25px 50px;
+} 
+.about-text3 polygon, .about-text3 path {
+	transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.about-text3:hover polygon, .about-text3:hover path {
+	transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+	fill: rgb(68, 171, 255);
+}
+.about-text3:hover .arrow {
+	animation: arrow-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.about-text3:hover .arrow-fixed {
+	animation: arrow-fixed-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
 .about-text h1 {
 	text-transform:uppercase;
 	font-size:24px;
@@ -840,6 +880,33 @@ img.grayscale:hover {
 	padding:0;
 	height:auto;
 }
+
+.effects2 {
+	padding-left:15px;
+}
+.effects2 .img {
+	position:relative;
+	position:relative;
+	z-index:1;
+	overflow:hidden;
+}
+.effects2 .img:nth-child(n) {
+	margin-right:5px;
+}
+.effects2 .img:first-child {
+	margin-left:-15px;
+}
+.effects2 .img:last-child {
+	margin-right:0;
+}
+.effects2 .img img {
+	display:block;
+	margin:0;
+	padding:0;
+	height:auto;
+}
+
+
 .overlay {
 	display:block;
 	position:absolute;
@@ -873,6 +940,7 @@ img.grayscale:hover {
 	height:100%;
 	opacity:1;
 }
+
 .img img {
 	width:-webkit-calc(100%+40px) !important;
 	width:calc(100%+40px) !important;
