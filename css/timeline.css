@@ -110,8 +110,9 @@
   }
 }
 .timeline__img {
-  max-width: 100%;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+  max-width: 85%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0);
+  padding-bottom: 26px;
 }
 .timeline-container {
   width: 100%;
