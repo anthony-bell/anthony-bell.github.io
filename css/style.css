@@ -686,6 +686,7 @@ h1.arrow span {
 .about-text2 {
 	padding:20px 50px 25px 50px;
 } 
+
 .about-text2 polygon, .about-text2 path {
 	transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
 }
@@ -720,6 +721,11 @@ h1.arrow span {
 	text-transform:uppercase;
 	font-size:24px;
 	color: #8C8C8C;
+}
+.about-text3 h1 {
+	text-transform:uppercase;
+	font-size:24px;
+	color: #FFE801;
 }
 .color-bg h1.arrow span {
     color: #FFE800;
