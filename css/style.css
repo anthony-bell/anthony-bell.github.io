@@ -885,7 +885,7 @@ img.grayscale:hover {
 }
 .effects .img img {
 	display:block;
-	margin:67px;
+	margin:67px -30px;
 	padding:0;
 	height:auto;
 }
