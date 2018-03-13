@@ -675,10 +675,7 @@
     <script type="text/javascript">
     // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
-        var el1 = document.getElementById('el1'),
-            el2 = document.getElementById('el2');
-
-        alert(doElsCollide(el1, el2));
+        
         function init() {
             // Basic options for a simple Google Map
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -715,6 +712,11 @@
                     (el1.offsetRight < el2.offsetLeft) ||
                     (el1.offsetLeft > el2.offsetRight))
         };
+
+        var el1 = document.getElementById('el1'),
+            el2 = document.getElementById('el2');
+
+        alert(doElsCollide(el1, el2));
 	
     </script>
 	
