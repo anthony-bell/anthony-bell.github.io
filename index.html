@@ -47,7 +47,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="menu-wrap">
-				<nav class="menu">
+				<nav class="menu" id="el1">
 				    <!-- Menu Links -->
 					<div class="icon-list">
 						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
@@ -268,7 +268,7 @@
               Check it out by using your native Camera app (iPhone), simply get the QR code in frame, and click the link when prompted. 
               Or use your favorite QR code scanner app (other smartphones). <br> <span>Note:</span> Must allow shared location and have Uber app installed.         
             </p>
-            <img src="img/GoXplr.png" style="width:200px; height:270px;"alt="qrcode">
+            <img src="img/GoXplr.png" id="el2" style="width:200px; height:270px;"alt="qrcode">
             <!-- Arrow Animation -->
               <div class="div">
                   <svg class="svg" width="50px" height="50px" viewBox="0 47 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -675,7 +675,10 @@
     <script type="text/javascript">
     // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
-    
+        var el1 = document.getElementById('el1'),
+            el2 = document.getElementById('el2');
+
+        alert(doElsCollide(el1, el2));
         function init() {
             // Basic options for a simple Google Map
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -700,6 +703,18 @@
             // Create the Google Map using out element and options defined above
             var map = new google.maps.Map(mapElement, mapOptions);
         }
+
+        doElsCollide = function(el1, el2) {
+            el1.offsetBottom = el1.offsetTop + el1.offsetHeight;
+            el1.offsetRight = el1.offsetLeft + el1.offsetWidth;
+            el2.offsetBottom = el2.offsetTop + el2.offsetHeight;
+            el2.offsetRight = el2.offsetLeft + el2.offsetWidth;
+            
+            return !((el1.offsetBottom < el2.offsetTop) ||
+                    (el1.offsetTop > el2.offsetBottom) ||
+                    (el1.offsetRight < el2.offsetLeft) ||
+                    (el1.offsetLeft > el2.offsetRight))
+        };
 	
     </script>
 	
