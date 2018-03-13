@@ -32,4 +32,4 @@
   
     }
   })(jQuery);
-  $("#timeline-1").timeline();
+  $("#experience").timeline();

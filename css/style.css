@@ -30,9 +30,10 @@ a {
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
 	transition:all 0.5s;
-	border-bottom: 1px dashed;
+	/* border-bottom: 1px dashed; */
 	outline:none!important;
 }
+
 a:hover,a:focus,a:active {
 	color:#19f6e8;
 	text-decoration:none;
@@ -358,6 +359,24 @@ table {
 /* ==========================================================================Section Styles========================================================================== */
 .section-padding {
 	padding:180px 0 100px
+}
+
+.section-paddingC {
+	padding:30px 0px 229px 309px
+}
+
+.section-paddingC polygon, .section-paddingC path {
+	transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.section-paddingC:hover polygon, .section-paddingC:hover path {
+	transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+	fill: #19f6e8;
+}
+.section-paddingC:hover .arrow {
+	animation: arrow-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.section-paddingC:hover .arrow-fixed {
+	animation: arrow-fixed-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 .dark-bg {
 	background:#f3f5f8;
@@ -1283,7 +1302,7 @@ ul.slides li {
 	.fluid-white {
 		display:none;
 	}
-	.wp2,.wp3,.wp4,.wp5,.light-box {
+	.wp2,.wp3,.wp4,.wp5,.wp7,.light-box {
 		margin-bottom: 30px;
 	}
 }
@@ -1317,7 +1336,7 @@ ul.slides li {
 		background:#f3f5f8;
 		height:540px;
 	}
-	.wp2,.wp3,.wp4,.wp5,.light-box {
+	.wp2,.wp3,.wp4,.wp5,.wp7,.light-box {
 		margin-bottom:30px;
 	}
 }

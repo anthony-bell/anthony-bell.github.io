@@ -34,6 +34,11 @@ $(document).ready(function() {
 	}, {
 		offset: '75%'
 	});
+	$('.wp7').waypoint(function() {
+		$('.wp7').addClass('animated fadeInDown');
+	}, {
+		offset: '75%'
+	});
 
 });
 
