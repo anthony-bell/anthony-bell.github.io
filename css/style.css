@@ -271,6 +271,11 @@ apple {
   }
 
 
+  .a:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+	animation: 0.5s draw linear forwards;
+}
+
 dl,menu,ol,ul {
 	margin:1em 0;
 }
