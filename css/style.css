@@ -744,7 +744,7 @@ h1.arrow span {
 }
 
 .about-text4 {
-	padding:20px 50px 25px 50px;
+	padding:20px 50px 25px 0px;
 } 
 .about-text4 polygon, .about-text4 path {
 	transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
