@@ -743,6 +743,9 @@ h1.arrow span {
 	animation: arrow-fixed-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 
+.about-text4L {
+	padding:20px 95px 25px 0px;
+} 
 .about-text4 {
 	padding:20px 50px 25px 0px;
 } 
