@@ -133,6 +133,10 @@ h1 {
 	margin:0.67em 0;
 	color:#353535;
 }
+divClear {
+    opacity: 0;
+    filter: Alpha(opacity=50); /* IE8 and earlier */
+}
 h2 {
 	font-size:1.5em;
 	margin:0.83em 0;
@@ -416,6 +420,8 @@ table {
 .inner {
 	padding-top: 138px;
 }
+
+
 /* ==========================================================================Navigation========================================================================== */
 .menu-wrap a {
 	color:#555d7c;
@@ -736,6 +742,24 @@ h1.arrow span {
 .about-text3:hover .arrow-fixed {
 	animation: arrow-fixed-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
+
+.about-text4 {
+	padding:20px 50px 25px 50px;
+} 
+.about-text4 polygon, .about-text4 path {
+	transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.about-text4:hover polygon, .about-text4:hover path {
+	transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+	fill: #19f6e8;
+}
+.about-text4:hover .arrow {
+	animation: arrow-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.about-text4:hover .arrow-fixed {
+	animation: arrow-fixed-anim 1.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+
 .about-text h1 {
 	text-transform:uppercase;
 	font-size:24px;
@@ -876,6 +900,10 @@ img.grayscale:hover {
 	filter:none;
 	-webkit-filter:grayscale(0%);
 }
+.rowC {
+	margin-left: -210px;
+    margin-right: -15px;
+}
 .row-offset-0 {
 	margin-left:0;
 	margin-right:0;
@@ -893,6 +921,16 @@ img.grayscale:hover {
 	z-index:1;
 	overflow:hidden;
 }
+
+.effects .img .img2 {
+	position:relative;
+	position:relative;
+	z-index:1;
+	overflow:hidden;
+	height: 400px;
+	width: 550px;
+}
+
 .effects .img:nth-child(n) {
 	margin-right:5px;
 }
