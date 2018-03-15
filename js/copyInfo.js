@@ -103,11 +103,7 @@
 
 			(function() {
 
-				var dlgtriggerMobile = document.querySelector( '[data-dialog-mobile]' ),
-					somedialogMobile = document.getElementById( dlgtriggerMobile.getAttribute( 'data-dialog-mobile' ) ),
-					dlgM = new DialogFx( somedialogMobile );
-
-				dlgtriggerMobile.addEventListener( 'click', dlgM.toggle.bind(dlgM) );
+				
 
 				var dlgtriggerEmail = document.querySelector( '[data-dialog-email]' ),
 					somedialogEmail = document.getElementById( dlgtriggerEmail.getAttribute( 'data-dialog-email' ) ),
