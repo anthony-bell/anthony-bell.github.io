@@ -1,0 +1,44 @@
+mixin videoButton(modal, src, title)
+  button(
+    type="button"
+    data-toggle="modal"
+    data-target=`#${modal}`
+    data-src=`${src}`
+    data-title=`${title}`
+  ).btn.p-0.js-play
+    img(
+      src=`https://img.youtube.com/vi/${src}/maxresdefault.jpg`
+      alt=`${title}`
+    ).card-img-top
+
+.wrapper
+  .container
+    .row.mb-5
+      .col.text-center
+        .h1.text-light YouTube video in Bootstrap 4 Modal
+    .row
+      .col
+        .card.w-75.mx-auto
+          +videoButton(
+            'modalVideo',
+            'c7nRTF2SowQ',
+            'Официальный анонс-трейлер Battlefield 1'
+          )
+      .col
+        .card.w-75.mx-auto
+          +videoButton('modalVideo', 'omWEZI0cT1g', 'DOOM - Fight Like Hell Cinematic Trailer')
+
+//- Modal
+div(tabindex="-1" role="dialog" aria-hidden="true")#modalVideo.modal.fade
+  div(role="document").modal-dialog.modal-lg.modal-dialog-centered
+    .modal-content
+      .modal-header
+        h5.modal-title.js-title-insert
+        button(type="button" data-dismiss="modal" aria-label="Close").close.js-pause
+          span(aria-hidden="true") &times;
+      .modal-body.px-0.py-0
+        .embed-responsive.embed-responsive-16by9
+          #youTubeIframe.embed-responsive-item
+
+// Add youtube api
+script(src="https://www.youtube.com/iframe_api")
